@@ -4,14 +4,17 @@ import { AppComponent } from './app.component';
 
 // App services
 import { GetLocationService} from './get-location.service'
+import { QueryService} from './query.service';
+import { LoginGuestComponent } from './login-guest/login-guest.component'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginGuestComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [GetLocationService],
+  providers: [GetLocationService,QueryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
